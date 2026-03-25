@@ -1,0 +1,50 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.productChart {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  display: flex;
+  flex-direction: column;
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+
+  // Tablet view
+  @media (max-width: 768px) {
+    padding: 0.75em;
+  }
+
+  // Mobile view
+  @media (max-width: 480px) {
+    padding: 0.5em;
+  }
+}
+
+// .links {
+//   display: flex;
+//   flex-wrap: wrap; // important for responsiveness
+//   gap: 8px;
+
+//   a {
+//     text-decoration: none;
+//     color: "[theme:link, default:#03787c]";
+//     color: var(--link);
+
+//     font-size: 14px;
+
+//     &:hover {
+//       text-decoration: underline;
+//       color: "[theme:linkHovered, default: #014446]";
+//       color: var(--linkHovered); 
+//     }
+
+//     // smaller text on mobile
+//     @media (max-width: 480px) {
+//       font-size: 12px;
+//     }
+//   }
+// }
