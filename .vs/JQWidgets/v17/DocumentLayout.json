@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SHAREPOINT\\PROJECT PRACTICE\\JQWidgets\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E901A0A2-1F23-4CBF-8025-AF1E81C3F8AE}|JQWidgets\\JQWidgets.csproj|d:\\sharepoint\\project practice\\jqwidgets\\jqwidgets\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E901A0A2-1F23-4CBF-8025-AF1E81C3F8AE}|JQWidgets\\JQWidgets.csproj|solutionrelative:jqwidgets\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\SHAREPOINT\\PROJECT PRACTICE\\JQWidgets\\JQWidgets\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "JQWidgets\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\SHAREPOINT\\PROJECT PRACTICE\\JQWidgets\\JQWidgets\\Pages\\Index.cshtml",
+              "RelativeToolTip": "JQWidgets\\Pages\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T07:01:32.142Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

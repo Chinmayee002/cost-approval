@@ -1,0 +1,155 @@
+﻿@page   
+@* Makes this file a Razor Page that can be accessed directly via URL. *@
+
+@* ➜ Connects this page to its PageModel class (IndexModel.cs). *@
+@model IndexModel
+
+@{
+
+    Layout = null;
+
+}
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jqxGrid Demo</title>
+ 
+    <link rel="stylesheet" href="https://jqwidgets.com/public/jqwidgets/styles/jqx.base.css" />
+ 
+ 
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ 
+    <script src="/lib/jqwidgets/jqxcore.js"></script>
+<script src="/lib/jqwidgets/jqxdata.js"></script>
+<script src="/lib/jqwidgets/jqxbuttons.js"></script>
+<script src="/lib/jqwidgets/jqxscrollbar.js"></script>
+<script src="/lib/jqwidgets/jqxmenu.js"></script>   
+<script src="/lib/jqwidgets/jqxgrid.js"></script>
+<script src="/lib/jqwidgets/jqxgrid.sort.js"></script>
+<script src="/lib/jqwidgets/jqxgrid.pager.js"></script>
+<script src="/lib/jqwidgets/jqxgrid.filter.js"></script>
+<script>
+
+        console.log("jQuery:", typeof $);                 // should be function
+
+        console.log("jqx:", typeof $.jqx);               // should be object
+
+        console.log("dataAdapter:", typeof $.jqx.dataAdapter); // should be function
+</script>
+ 
+    <style>
+
+        body {
+
+            font-family: Arial;
+
+            padding: 20px;
+
+        }
+ 
+        #grid {
+
+            margin-top: 20px;
+
+        }
+</style>
+</head>
+<body>
+<h2>jqxGrid Demo</h2>
+ 
+    <div id="grid"></div>
+ 
+    <script>
+
+        $(function () {
+
+            var data = [
+
+                { Name: "Anu", Section: "A" },
+
+                { Name: "Ravi", Section: "C" },
+
+                { Name: "Sita", Section: "B" },
+
+                { Name: "Kiran", Section: "A" },
+
+                { Name: "Meena", Section: "B" },
+
+                { Name: "Ajay", Section: "C" },
+                { Name: "Pooja", Section: "A" },
+                { Name: "Rahul", Section: "B" },
+                { Name: "Neha", Section: "C" },
+                { Name: "Amit", Section: "A" },
+                { Name: "Sunita", Section: "B" },
+                { Name: "Vikram", Section: "C" },
+                { Name: "Priya", Section: "A" },
+                { Name: "Suresh", Section: "B" },
+                { Name: "Nisha", Section: "C" },
+                { Name: "Manoj", Section: "A" },
+                { Name: "Kavita", Section: "B" },
+                { Name: "Deepak", Section: "C" },
+                { Name: "Rina", Section: "A" },
+                { Name: "Arjun", Section: "B" },
+                { Name: "Sneha", Section: "C" },
+                { Name: "Rohit", Section: "A" },
+                { Name: "Pallavi", Section: "B" },
+                { Name: "Nitin", Section: "C" },
+                { Name: "Shreya", Section: "A" },
+                { Name: "Gopal", Section: "B" }
+
+
+            ];
+ 
+            var source = {
+
+                localdata: data,
+
+                datatype: "array",
+
+                datafields: [
+
+                    { name: 'Name', type: 'string' },
+
+                    { name: 'Section', type: 'string' }
+
+                ]
+
+            };
+ 
+            var dataAdapter = new $.jqx.dataAdapter(source);
+ 
+            $("#grid").jqxGrid({
+
+                width: "100%",
+
+                autoheight: true,
+
+                sortable: true,
+
+                filterable: true,
+
+                showfilterrow: true, 
+
+                pageable: true,
+
+                pagesize: 5,
+
+                source: dataAdapter,
+
+                columns: [
+
+                    { text: 'Name', datafield: 'Name', width: "50%" },
+
+                    { text: 'Section', datafield: 'Section', width: "50%" }
+
+                ]
+
+            });
+
+        });
+</script>
+</body>
+</html>
+ 
